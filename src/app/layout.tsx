@@ -1,11 +1,12 @@
 "use client"
 
-import { twMerge } from "tailwind-merge"
 import "./globals.css"
+
 import { Inter } from "next/font/google"
 import { useState } from "react"
-import { DarkModeSwitch } from "./_components/DarkModeSwitch"
 import { Toaster } from "sonner"
+import { twMerge } from "tailwind-merge"
+import { DarkModeSwitch } from "./_components/DarkModeSwitch"
 
 const inter = Inter({ subsets: ["latin"] })
 

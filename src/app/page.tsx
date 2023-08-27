@@ -4,7 +4,7 @@ import { Hero } from "./_components/Hero"
 export const runtime = "edge"
 
 export const metadata: Metadata = {
-  title: "shrtn",
+  title: "shrtn.hu",
   description: "Batteries included nothing special url shortener!",
 }
 
