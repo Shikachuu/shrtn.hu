@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint --fix",
     "build:prod": "next-on-pages -c",
-    "preview": "wrangler pages dev .vercel/output/static --compatibility-date 2023-08-14 --port 3000 --kv shrtn --compatibility-flag=nodejs_compat"
+    "preview": "wrangler pages dev .vercel/output/static --compatibility-date 2023-08-14 --port 3000 --kv shrtn --compatibility-flag=nodejs_compat --env .env"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.0",

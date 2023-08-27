@@ -28,8 +28,8 @@ export function GenerateCommandBox({ closeModal }: GenerateCommandBoxProps) {
       toast.error("Failed to generate URL!")
       return
     }
-
-    setUrl(process.env.URL || "http://localhost:3000" + `/${id}`)
+    const { origin } = window.location
+    setUrl(`${origin}/${id}`)
     toast.success("The given url is succesfully shrtnd!")
   }
 
