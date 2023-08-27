@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
-import { Hero } from "./components/Hero"
-import { env } from "process"
+import { Hero } from "./_components/Hero"
 
 export const runtime = "edge"
 

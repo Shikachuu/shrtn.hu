@@ -5,7 +5,6 @@ import { GenerateCommandBox } from "./GenerateCommandBox"
 
 export function Hero() {
   const [isModalOpen, setModalOpen] = useState(false)
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">

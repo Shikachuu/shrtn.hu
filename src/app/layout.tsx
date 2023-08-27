@@ -4,7 +4,8 @@ import { twMerge } from "tailwind-merge"
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { useState } from "react"
-import { DarkModeSwitch } from "./components/DarkModeSwitch"
+import { DarkModeSwitch } from "./_components/DarkModeSwitch"
+import { Toaster } from "sonner"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -15,6 +16,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={twMerge(inter.className, isDarkMode ? "dark" : "light")}>
+        <div className="absolute">
+          <Toaster position="bottom-center" theme={isDarkMode ? "dark" : "light"} />
+        </div>
         <div className="bg-background dark:bg-d-background transition ease-linear">
           <span className="z-50">
             <DarkModeSwitch onSwitch={() => setIsDarkMode(!isDarkMode)} isDarkMode={isDarkMode} />

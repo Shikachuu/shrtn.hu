@@ -8,9 +8,10 @@
     "start": "next start",
     "lint": "next lint --fix",
     "build:prod": "next-on-pages -c",
-    "preview": "wrangler pages dev .vercel/output/static --compatibility-date 2023-08-14 --port 3000 --kv shrtnKVN --compatibility-flag=nodejs_compat"
+    "preview": "wrangler pages dev .vercel/output/static --compatibility-date 2023-08-14 --port 3000 --kv shrtn --compatibility-flag=nodejs_compat"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.0",
     "@paralleldrive/cuid2": "^2.2.2",
     "@types/node": "20.5.6",
     "@types/react": "18.2.21",
@@ -22,10 +23,12 @@
     "postcss": "8.4.28",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.4",
     "sonner": "^0.7.0",
     "tailwind-merge": "^1.14.0",
     "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.6.0",
