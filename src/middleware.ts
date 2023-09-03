@@ -1,8 +1,9 @@
 import { NextResponse, NextRequest } from "next/server"
+import type { KVNamespace } from "@cloudflare/workers-types"
  
 export const runtime = "experimental-edge"
 
-export async function middleware(request: NextRequest) {
+export async function middleware (request: NextRequest) {
   const { shrtn, BASE_URL } = (process.env as unknown as { shrtn: KVNamespace, BASE_URL: string })
 
   const url = await shrtn.get(request.nextUrl.pathname.substring(1))

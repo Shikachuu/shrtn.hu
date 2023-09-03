@@ -12,7 +12,7 @@ type GenerateCommandBoxProps = {
   closeModal: () => void
 }
 
-export function GenerateCommandBox({ closeModal }: GenerateCommandBoxProps) {
+export function GenerateCommandBox ({ closeModal }: GenerateCommandBoxProps) {
   const { register, handleSubmit, formState: { errors } } = useForm<GenerateUrlSchema>({
     resolver: zodResolver(generateUrlSchema),
   })

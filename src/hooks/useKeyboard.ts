@@ -4,7 +4,7 @@ type KeyboardEvent = {
   key: string
 }
 
-export function useKeyboard(callback: () => void, key: string) {
+export function useKeyboard (callback: () => void, key: string) {
   const keyEventHandler = useCallback((e: KeyboardEvent) => {
     if (e.key === key) {
       callback()

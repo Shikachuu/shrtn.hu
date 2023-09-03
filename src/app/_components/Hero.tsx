@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { GenerateCommandBox } from "./GenerateCommandBox"
 
-export function Hero() {
+export function Hero () {
   const [isModalOpen, setModalOpen] = useState(false)
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-24 pt-24">

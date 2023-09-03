@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Batteries included nothing special url shortener!",
 }
 
-export default function Home() {
+export default function Home () {
   return (
     <Hero />
   )
